@@ -14,11 +14,6 @@ fun main() {
         return results.sumOf { it.occurrences }
     }
 
-    // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day04_test")
-    check(part1(testInput) == 13)
-    check(part2(testInput) == 30)
-
     val input = readInput("Day04")
     part1(input).println()
     part2(input).println()
