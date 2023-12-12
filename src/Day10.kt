@@ -45,7 +45,6 @@ private class Field(val tiles: List<Tile>, val cols: Int) {
             val newDirection = tile
                 .connections
                 .first { it != direction.opposite }
-                .also { println(it) }
             return walk(newPosition, newDirection, seen)
         }
     }
